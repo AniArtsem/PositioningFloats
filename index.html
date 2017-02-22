@@ -1,186 +1,47 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <style>
-        body {
-            height: 2000px;
-            font-family: 'PT Sans', sans-serif;
-            font-size: 12px;
-        }
-        .container {
-            margin: 0 auto;
-            width: 500px;
-            position: relative;
-        }
-        .pages .page {
-            margin: 0 auto;
-            position: absolute;
-            width: 460px;
-            height: 750px;
-            border: 2px solid #000;
-        }
-        .content {
-            padding: 20px;
-        }
-        #page1 {
-            background-color: #ebebeb;
-            top: 0;
-            left: 0;
-            z-index: 5;
-        }
-        #page2 {
-            background-color: #cccccc;
-            z-index: 4;
-            top: 20px;
-            left: 20px;
-        }
-        #page3 {
-            background-color: #acacac;
-            z-index: 1;
-            top: 40px;
-            left: 40px;
-        }
-        .bookmark {
-            border: 2px solid #000;
-            width: 100px;
-            height: 30px;
-            position: absolute;
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px;
-        }
-        #bookmark1 {
-            background-color: #f68e56;
-            right: -40px;
-            top: 42px;
-            z-index: 6;
-        }
-        #bookmark2 {
-            background-color: #39b54a;;
-            right: -30px;
-            top: 67px;
-            z-index: 4;
-        }
-        #bookmark3 {
-            background-color: #00aeef;;
-            right: -20px;
-            top: 94px;
-            z-index: 2;
-        }
-        img {
-            width: 100px;
-            height: 100px;
-        }
-        .left {
-            float: left;
-            margin: 0 10px 5px 0;
-        }
-        .right {
-            float: right;
-            margin: 0 0 5px 10px;
-        }
-        .joke {
-            width: 180px;
-            height: 120px;
-            background-color: red;
-        }
-        #joke1 {
-            background-color: #20ce6d;
-        }
-        #joke2 {
-            background-color: #3a8fba;
-        }
-        #joke3 {
-            background-color: #61ca9b;
-        }
-        #joke4 {
-            background-color: #f36a71;
-        }
-        .copy {
-            padding-top: 15px;
-            font-size: 10px;
-            text-align: center;
-            clear: both;
-        }
-        .photo {
-            margin: 10px auto;
-            border-radius: 15px;
-            overflow: hidden;
-        }
-        .photo,
-        .photo img {
-            width: 30px;
-            height: 30px;
-        }
-        .code {
-            font-size: 10px;
-            margin: 5px 20px;
-            background: #fff;
-            padding: 10px;
-        }
-        .share {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            border: 2px solid #000;
-            background-color: #fbaf5d;
-            text-align: center;
-        }
-        .share a {
-            width: 40px;
-            height: 40px;
-            border-radius: 20px;
-        }
-        .share h5 {
-            margin: 5px;
-        }
-        .share a {
-            overflow: hidden;
-        }
-        .share a img {
-            width: 40px;
-            height: 40px;
-        }
-        .share span {
-            clear: both;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
 </head>
 <body>
     <div class="container">
         <div class="pages">
-            <div id="page1" class="page">
+            <div class="page p1">
+                <div class="bookmark b1"></div>
                 <div class="content">
                     <h1>Lorem ipsum dolor sit amet</h1>
-                    <p><img class="left" src="https://lh4.ggpht.com/wKrDLLmmxjfRG2-E-k5L5BUuHWpCOe4lWRF7oVs1Gzdn5e5yvr8fj-ORTlBF43U47yI=w300" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor scelerisque sem, et facilisis purus ultricies sed. Nulla sed dui mi. Sed sit amet metus elit. Curabitur maximus auctor mi a auctor. Aliquam sapien tellus, tempor vitae fermentum id, faucibus eu sem. Aliquam finibus mi a dui viverra, at ultrices quam accumsan. Cras id vehicula nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras vitae tristique ex. Ut et ligula vel mauris ornare mattis.</p>
-                    <p><img class="right" src="https://lh4.ggpht.com/wKrDLLmmxjfRG2-E-k5L5BUuHWpCOe4lWRF7oVs1Gzdn5e5yvr8fj-ORTlBF43U47yI=w300" />Vivamus vulputate, elit ut tincidunt fermentum, urna purus tempus nisi, at sodales erat metus ut nisi. Morbi et erat mollis, malesuada purus et, imperdiet lorem. Pellentesque ornare felis at lacus condimentum auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius turpis rutrum, sodales tortor ut, interdum mi. Vestibulum eleifend id arcu non commodo. Donec at massa venenatis, pellentesque justo in, condimentum elit.</p>
+                    <img src="./img/css_is_awesome.jpg" class="left_float" />
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor scelerisque sem, et facilisis purus ultricies sed. Nulla sed dui mi. Sed sit amet metus elit. Curabitur maximus auctor mi a auctor. Aliquam sapien tellus, tempor vitae fermentum id, faucibus eu sem. Aliquam finibus mi a dui viverra, at ultrices quam accumsan. Cras id vehicula nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras vitae tristique ex. Ut et ligula vel mauris ornare mattis.</p>
+                    <img src="./img/css_my_html.jpg" class="right_float" />
+                    <p>Vivamus vulputate, elit ut tincidunt fermentum, urna purus tempus nisi, at sodales erat metus ut nisi. Morbi et erat mollis, malesuada purus et, imperdiet lorem. Pellentesque ornare felis at lacus condimentum auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius turpis rutrum, sodales tortor ut, interdum mi. Vestibulum eleifend id arcu non commodo. Donec at massa venenatis, pellentesque justo in, condimentum elit.</p>
+                    <div class="clearfix"></div>
                     <h3>Aenean rhoncus sapien in viverra gravida.</h3>
-                    <div id="joke1" class="joke left">
-                        <div class="photo"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSY1Zmy3xIUnYu6gFnuIdB-aKuXAJ_rQRCUJmBeiVklUxiVSyyD" /></div>
-                    </div>
-                    <div id="joke2" class="joke right">
-                        <div class="photo"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSY1Zmy3xIUnYu6gFnuIdB-aKuXAJ_rQRCUJmBeiVklUxiVSyyD" /></div>                        
-                    </div>
-                    <div id="joke3" class="joke left">
-                        <div class="photo"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSY1Zmy3xIUnYu6gFnuIdB-aKuXAJ_rQRCUJmBeiVklUxiVSyyD" /></div>
-                    </div>
-                    <div id="joke4" class="joke right">
-                        <div class="photo"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSY1Zmy3xIUnYu6gFnuIdB-aKuXAJ_rQRCUJmBeiVklUxiVSyyD" /></div>
+                    <div class="columns">
+                        <div class="left">
+                            <img src="./img/joke1.jpg" />
+                            <img src="./img/joke2.jpg" />
+                        </div><div class="right">
+                            <img src="./img/joke3.jpg" />
+                            <img src="./img/joke4.jpg" />
+                        </div>
                     </div>
                     <p class="copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vulputate orci et erat ultricies aliquam. Nullam a nunc eget ligula vestibulum vehicula at malesuada tellus. Praesent nec imperdiet turpis. Nulla semper sit amet metus ut iaculis.</p>
                 </div>
             </div>
-            <div id="bookmark1" class="bookmark"></div>
-            <div id="page2" class="page"></div>
-            <div id="bookmark2" class="bookmark"></div>
-            <div id="page3" class="page"></div>
-            <div id="bookmark3" class="bookmark"></div>
+            <div class="page p2">
+                <div class="bookmark b2"></div>
+            </div>
+            <div class="page p3">
+                <div class="bookmark b3"></div>
+            </div>
         </div>
-        <div class="share">
-            <h5>Share this</h5>
-            <a target="_blank" href="https://www.facebook.com/"><img src="https://images.seeklogo.net/2016/09/facebook-icon-preview.png" /></a>
-            <a target="_blank" href="https://twitter.com/"><img src="http://goinkscape.com/wp-content/uploads/2015/07/twitter-logo-final.png" /></a>
-            <a target="_blank" href="https://instagram.com/"><img src="https://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/052016/untitled-1_151.png?itok=5pgkMHV0" /></a>
-        </div>
+    </div>
+    <div class="share">
+        <h5>Share this</h5>
+        <a target="_blank" href="https://www.facebook.com/"><img src="https://images.seeklogo.net/2016/09/facebook-icon-preview.png" /></a>
+        <a target="_blank" href="https://twitter.com/"><img src="https://images.seeklogo.net/2016/11/twitter-icon-circle-blue-logo-preview.png" /></a>
+        <a target="_blank" href="https://instagram.com/"><img src="https://img.clipartfest.com/6281fdaf6b01c103b2dfdc2f8e99514e_instagram-camera-logo-black-instagram-logo-clipart_512-512.png" /></a>
     </div>
 </body>
 </html>
